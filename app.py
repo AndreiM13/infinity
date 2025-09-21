@@ -5,8 +5,8 @@ import seaborn as sns
 import plotly.express as px
 import os
 
-# --- Set working directory manually ---
-os.chdir(r"C:\Users\macov\Desktop\infinity")
+# # --- Set working directory manually ---
+# os.chdir(r"C:\Users\macov\Desktop\infinity")
 
 st.title("Game Analytics Dashboard")
 
@@ -114,3 +114,4 @@ ax.set_title('Total Revenue per Country')
 plt.xticks(rotation=45)
 plt.tight_layout()
 st.pyplot(fig)
+
