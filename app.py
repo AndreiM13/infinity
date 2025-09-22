@@ -54,7 +54,7 @@ ax.plot(ad_watch_daily['date'], ad_watch_daily['Ad_Watches'], color='red', marke
 ax.set_xlabel('Date')
 ax.set_ylabel('Ad Watches')
 ax.set_title('Ad Watches Over Time')
-plt.xticks(rotation=45)
+plt.xticks(rotation=0)
 plt.tight_layout()
 st.pyplot(fig)
 
@@ -83,6 +83,7 @@ fig, ax = plt.subplots(figsize=(8,5))
 top_dropoff_levels.plot(kind='bar', color='#0a0a23', ax=ax)
 ax.set_xlabel("Level")
 ax.set_ylabel("Players Dropped Off")
+ax.set_xticklabels(top_dropoff_levels.index, rotation=0)
 ax.set_title("Top 5 Drop-Off Levels")
 st.pyplot(fig)
 
@@ -111,7 +112,8 @@ ax.bar(revenue_by_country['country'], revenue_by_country['total_revenue'], color
 ax.set_xlabel('Country')
 ax.set_ylabel('Total Revenue (USD)')
 ax.set_title('Total Revenue per Country')
-plt.xticks(rotation=45)
+plt.xticks(rotation=0)
 plt.tight_layout()
 st.pyplot(fig)
+
 
